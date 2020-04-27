@@ -3,6 +3,34 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <style>
+            /* Make the image fully responsive */
+            .carousel-inner img {
+                width: 100%;
+                height: 100%;
+            }
+        
+            .carousel-indicators .active {
+                background-color: #0779e4;
+                /* color: black; */
+            }
+        
+            .carousel-indicators li {
+                background-color: #b9b9b9;
+                /* border: 1px groove#0779e4; */
+                text-align: right;
+        float: right;
+        right: 2% !important;
+        left: inherit;
+        
+            }
+        </style>
     <style>
         .gm-style .gm-style-mtc label,
         .gm-style .gm-style-mtc div {
@@ -398,7 +426,7 @@
         <div style="height:50px;" class="space"></div>
     </div>
      <!-- slider div starts -->
-    <div class="ed-element ed-container flex-justify-content-center slider-wrap content-slider-wrap wv-spacer preset-content-slider-default"
+    <!-- <div class="ed-element ed-container flex-justify-content-center slider-wrap content-slider-wrap wv-spacer preset-content-slider-default"
         id="ed-26608512">
         <div class="inner slick-initialized slick-slider slick-dotted" role="toolbar"><button type="button"
                 data-role="none" class="slick-prev slick-arrow" role="button" style=""></button>
@@ -762,8 +790,7 @@
                 </div>
             </div>
             <button type="button" data-role="none" class="slick-next slick-arrow" role="button" style=""></button>
-           <!-- 3 dot button  -->
-            <ul class="slick-dots" style="" role="tablist">
+           <ul class="slick-dots" style="" role="tablist">
                 <li class="slick-active" aria-hidden="false" role="presentation" aria-selected="true" aria-controls="navigation10"
                     id="slick-slide10">
                     <button type="button" data-role="none" role="button" tabindex="0">1</button></li>
@@ -772,11 +799,239 @@
                 <li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation12" id="slick-slide12">
                     <button type="button" data-role="none" role="button" tabindex="0">3</button></li>
             </ul>
-            <!-- 3 dot button ends -->
 
         </div>
-    </div>
+    </div> -->
+    <div id="demo" class="carousel slide" data-ride="carousel">
 
+    <!-- Indicators -->
+    <ol class="carousel-indicators"  >
+      <li style="border-radius: 100%;  width: 20px;height: 20px;"   data-target="#demo" data-slide-to="0" class="active"></li>
+      <li style="border-radius: 100%; width: 20px;height: 20px;"  data-target="#demo" data-slide-to="1"></li>
+      <li style="border-radius: 100%; width: 20px;height: 20px;"  data-target="#demo" data-slide-to="2"></li>
+    </ol>
+    
+    <!-- The slideshow -->
+    <div class="carousel-inner" style="width:100%">
+                <div class="carousel-item active" style="width:100%">
+            <div class="ed-element ed-container slick-slide slick-current slick-active" id="ed-26608515"
+                data-slick-index="0" aria-hidden="false" style="width: 1349px;" tabindex="-1" role="option"
+                aria-describedby="slick-slide10">
+                <div class="inner" >
+                    <div class="ed-element ed-container flex-align-items-stretch flex-justify-content-space-between preset-text-and-background-default"
+                        id="ed-26608518">
+                        <div class="inner" style="">
+                            <div class="ed-element ed-container wv-boxed text-and-background-content wv-spacer"
+                                id="ed-26608521">
+                                <div class="inner" style="">
+                                    <div class="ed-element ed-headline custom-theme" id="ed-26608704">
+                                        <h4>Djursland-psykologen</h4>
+                                    </div>
+                                    <div class="ed-element ed-spacer" id="ed-26608713">
+                                        <div style="height: 20px;" class="space"></div>
+                                    </div>
+                                    <div class="ed-element ed-headline custom-theme" id="ed-26608524">
+                                        <h3>Psykolog nær Grenå</h3>
+                                    </div>
+                                    <div class="ed-element ed-spacer" id="ed-26608797">
+                                        <div style="height: 20px;" class="space"></div>
+                                    </div>
+                                    <div class="ed-element ed-image" id="ed-26608800"><a
+                                            href="https://www.djursland-psykologen.dk/" tabindex="0"><img
+                                                src="./index_files/psykolog-gren-frank-kjerstein.jpg"
+                                                srcset="https://cdn6.site-media.eu/images/360/3110664/psykolog-gren-frank-kjerstein.jpg 360w, https://cdn6.site-media.eu/images/720/3110664/psykolog-gren-frank-kjerstein.jpg 720w, https://cdn6.site-media.eu/images/747/3110664/psykolog-gren-frank-kjerstein.jpg 747w"
+                                                alt="Psykolog Grenaa - Autoriseret psykolog Frank Kjerstein"
+                                                sizes="(min-width: 976px) 747px"
+                                                data-src="https://cdn6.site-media.eu/images/442/3110664/psykolog-gren-frank-kjerstein.jpg"
+                                                class=""
+                                                data-srcset="https://cdn6.site-media.eu/images/360/3110664/psykolog-gren-frank-kjerstein.jpg 360w, https://cdn6.site-media.eu/images/720/3110664/psykolog-gren-frank-kjerstein.jpg 720w, https://cdn6.site-media.eu/images/747/3110664/psykolog-gren-frank-kjerstein.jpg 747w"
+                                                style="width: 100%;"></a></div>
+                                    <div class="ed-element ed-text custom-theme" id="ed-26608527">
+                                        <p><br></p>
+                                        <p>Autoriseret psykolog: JA, psykologen er autoriseret<br>Tilbyder
+                                            aften-tider: JA, der tilbydes aften-tider<br>Tilbyder weekend-tider:
+                                            JA, der tilbydes weekend-samtaler<br>Afstand fra Letbanen: 300 meter
+                                        </p>
+                                        <p>Åbent alle ugens dage: JA, åbent alle ugens syv dage<br>Krypteret
+                                            hjemmeside: JA, sikker forbindelse<br><br><strong>Lægehenvisning:
+                                                JA, der er lavere pris med
+                                                lægehenvisning</strong><br><strong><strong>Ventetid: Ingen
+                                                    ventetid</strong></strong><br><br></p>
+                                        <p><strong>Åbningstider:</strong><br>Mandag-fredag:
+                                            07:30-22:30<br>Lørdag-søndag: 07:30-22:30 (også ferier)<br><br></p>
+                                        <p><strong>Telefon:</strong> <span class="color-background"><a
+                                                    class="color-background" href="tel:+4589884445" title=""
+                                                    tabindex="0">+45 89 88 44 45</a></span><br><strong>Send
+                                                SMS:</strong> <span class="color-background"><a class="color-background"
+                                                    href="sms:+4542632400" title="" tabindex="0">+45 42 63 24 00</a></span>
+                                        </p>
+                                        <p style="text-align: center;"><br><strong>Tidsbestilling:</strong>
+                                            <span class="color-background"><a class="color-background"
+                                                    href="https://www.djursland-psykologen.dk/kontakt/bestil-tid/" title=""
+                                                    tabindex="0"><u>Bestil en
+                                                        tid</u></a><u>&nbsp;(online)</u></span></p>
+                                    </div>
+                                    <div class="ed-element ed-spacer" id="ed-26608707">
+                                        <div style="height: 25px;" class="space"></div>
+                                    </div>
+                                    <div class="ed-element ed-button custom-theme center" id="ed-26608710"><a class="button"
+                                            href="https://www.djursland-psykologen.dk/" rel="nofollow"
+                                            tabindex="0">hjemmeside</a></div>
+                                </div>
+                            </div>
+                            <div class="ed-element ed-container full-width text-and-background-background" id="ed-26608530">
+                                <div class="background" style="">
+                                    <div class="ed-element ed-image wv-bg bg-lt" id="ed-26608533"><img
+                                            src="./index_files/psykolog-grenaa-1.jpg" alt="" style="">
+                                        <div class="background-image-holder"
+                                            style="background-image: url(&quot;https://cdn6.site-media.eu/images/1680%2C786x709%2B0%2B114/2688594/psykolog-grenaa-1.jpg&quot;);"
+                                            title="Lokal psykolog nær Grenå"></div>
+                                    </div>
+                                </div><a class="inner" data-parallax-amount="0" href="https://www.djursland-psykologen.dk/"
+                                    rel="nofollow" tabindex="0">&nbsp;</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item" style="width:100%">
+            <div class="ed-element ed-container slick-slide" id="ed-26608536" data-slick-index="1" aria-hidden="true"
+                style="width: 1349px;" tabindex="-1" role="option" aria-describedby="slick-slide11">
+                <div class="inner">
+                    <div class="ed-element ed-container flex-align-items-stretch flex-justify-content-space-between preset-text-and-background-default"
+                        id="ed-26608557">
+                        <div class="inner" style="">
+                            <div class="ed-element ed-spacer" id="ed-26608776">
+                                <div style="height:50px;" class="space"></div>
+                            </div>
+                            <div class="ed-element ed-spacer" id="ed-26608779">
+                                <div style="height:50px;" class="space"></div>
+                            </div>
+                            <div class="ed-element ed-container wv-boxed text-and-background-content wv-spacer full-width"
+                                style="background-color: rgb(29, 105, 55);" id="ed-26608560">
+                                <div class="inner" style="">
+                                    <div class="ed-element ed-headline custom-theme" id="ed-26608728">
+                                        <h4>Marianne Sander</h4>
+                                    </div>
+                                    <div class="ed-element ed-spacer" id="ed-26608731">
+                                        <div style="height: 20px;" class="space"></div>
+                                    </div>
+                                    <div class="ed-element ed-headline custom-theme" id="ed-26608734">
+                                        <h3>Psykolog i Grenå</h3>
+                                    </div>
+                                    <div class="ed-element ed-text custom-theme" id="ed-26608737">
+                                        <p><br></p>
+                                        <p>Autoriseret psykolog: JA, psykologen er autoriseret<br>Tilbyder
+                                            aften-tider: NEJ, der tilbydes ikke aften-tider<br>Tilbyder
+                                            weekend-tider: NEJ, der er ikke weekend-samtaler<br>Afstand fra
+                                            Letbanen: 300 meter<br>Lægehenvisning: JA, der er lavere pris med
+                                            lægehenvisning</p>
+                                        <p>Åbent alle ugens dage: NEJ, ikke alle ugens syv dage<br>Krypteret
+                                            hjemmeside: JA, sikker forbindelse</p>
+                                        <p><br></p>
+                                        <p><strong>Åbningstider:</strong><br>Ikke oplyst, men telefontid kl.
+                                            12-13 på hverdage.</p>
+                                        <p><br></p>
+                                        <p><strong>Telefon:</strong> +4586327510</p>
+                                    </div>
+                                    <div class="ed-element ed-spacer" id="ed-26608740">
+                                        <div style="height: 25px;" class="space"></div>
+                                    </div>
+                                    <div class="ed-element ed-button custom-theme center" id="ed-26608743"><a class="button"
+                                            href="http://www.mariannesander.dk/" rel="nofollow" tabindex="-1">hjemmeside</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ed-element ed-container full-width text-and-background-background" id="ed-26608563">
+                                <div class="background">
+                                    <div class="ed-element ed-image wv-bg bg-cc" id="ed-26608566"><img
+                                            src="./index_files/psykolog-grenaa-3.jpg" alt="">
+                                        <div class="background-image-holder"
+                                            style="background-image: url(&quot;https://cdn6.site-media.eu/images/1680%2C800x721%2B0%2B12/2688675/psykolog-grenaa-3.jpg&quot;);">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="inner" data-parallax-amount="0">&nbsp;</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item " style="width:100%">
+            <div class="ed-element ed-container slick-slide slick-cloned" data-slick-index="-1" aria-hidden="true"
+                style="width: 1349px;" tabindex="-1">
+                <div class="inner">
+                    <div class="ed-element ed-container flex-align-items-stretch flex-justify-content-space-between preset-text-and-background-default"
+                        id="">
+                        <div class="inner" style="">
+                            <div class="ed-element ed-spacer" id="">
+                                <div style="height:50px;" class="space"></div>
+                            </div>
+                            <div class="ed-element ed-spacer" id="">
+                                <div style="height:50px;" class="space"></div>
+                            </div>
+                            <div class="ed-element ed-container wv-boxed text-and-background-content wv-spacer" id="">
+                                <div class="inner" style="">
+                                    <div class="ed-element ed-headline custom-theme" id="">
+                                        <h4>Dorte Møller</h4>
+                                    </div>
+                                    <div class="ed-element ed-spacer" id="">
+                                        <div style="height: 20px;" class="space"></div>
+                                    </div>
+                                    <div class="ed-element ed-headline custom-theme" id="">
+                                        <h3>Psykolog i Grenå</h3>
+                                    </div>
+                                    <div class="ed-element ed-text custom-theme" id="">
+                                        <p><br></p>
+                                        <p>Autoriseret psykolog: JA, psykologen er autoriseret<br>Tilbyder
+                                            aften-tider: NEJ, der tilbydes ikke aften-tider<br>Tilbyder
+                                            weekend-tider: NEJ, der er ikke weekend-samtaler<br>Afstand fra
+                                            Letbanen: 300 meter<br>Lægehenvisning: JA, der er lavere pris med
+                                            lægehenvisning</p>
+                                        <p>Åbent alle ugens dage: NEJ, ikke alle ugens syv dage<br>Krypteret
+                                            hjemmeside: Nej, ikke krypteret forbindelse</p>
+                                        <p><br></p>
+                                        <p><strong>Åbningstider:</strong><br>Ikke oplyst, men telefontid
+                                            mandag-torsdag kl. 8-9.</p>
+                                        <p><br></p>
+                                        <p><strong>Telefon:</strong> +4524279667 </p>
+                                    </div>
+                                    <div class="ed-element ed-spacer" id="">
+                                        <div style="height: 25px;" class="space"></div>
+                                    </div>
+                                    <div class="ed-element ed-button custom-theme center" id=""><a class="button"
+                                            href="http://psykologdortetraasdahl.dk/" rel="nofollow"
+                                            tabindex="-1">hjemmeside</a></div>
+                                </div>
+                            </div>
+                            <div class="ed-element ed-container full-width text-and-background-background" id="">
+                                <div class="background" style="">
+                                    <div class="ed-element ed-image wv-bg bg-cc"><img
+                                            src="./index_files/psykolog-grenaa-4.jpg">
+                                        <div class="background-image-holder"
+                                            style="background-image: url(&quot;https://cdn6.site-media.eu/images/1680%2C800x721%2B0%2B89/2688780/psykolog-grenaa-4.jpg&quot;);">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="inner" data-parallax-amount="0">&nbsp;</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+     <!-- Left and right controls -->
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+  </div>
     <!-- slider ends -->
     <div class="ed-element ed-container wv-boxed wv-spacer" id="ed-26608356">
         <div class="inner" id="services">
