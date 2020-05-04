@@ -1,4 +1,5 @@
-<!DOCTYPE html><html lang="en"><head>
+<!DOCTYPE html><html lang="en">
+    <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Psykolog Grenå - 3 psykologer nær og i Grenå</title>
@@ -146,6 +147,60 @@
             text-decoration: none;
         }
     </style>
+    
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+        }
+
+        .overlayh {
+            height: 100%;
+            width: 100%;
+            display: none;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: rgb(0, 0, 0);
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .overlayh-content {
+            margin-right: 18%;
+            margin-left: 18%;
+            /* margin-top: 5%; */
+            width: fit-content;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+
+        .overlayh p {
+            font-size: 18px;
+            color: white;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .overlayh .closebtn {
+            position: absolute;
+            top: 20px;
+            right: 45px;
+            padding-left: 13px;
+            padding-right: 13px;
+            font-size: 30px;
+            background-color: #3b79ff;
+            color: white;
+        }
+        .overlayh{
+    overflow-y: initial !important;
+
+}
+.modal{
+    height:100%;
+    overflow-y: auto;
+}
+    </style>
+  
     <meta name="robots" content="index,follow">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="keywords" content="Psykolog Grenå, psykolog, grenaa">
@@ -722,7 +777,7 @@
                             </div>
                             <div class="ed-element ed-text custom-theme link" id="ed-26608389">
                                 <p><i class="fa fa-chevron-right"></i> <a class="wv-link-elm"
-                                        href="#ed-26608590" title="">Læs mere</a></p>
+                                        href="#stress" onclick="openNav()" title="">Læs mere</a></p>
                             </div>
                         </div>
                     </div>
@@ -745,7 +800,7 @@
                             </div>
                             <div class="ed-element ed-text custom-theme link" id="ed-26608407">
                                 <p><i class="fa fa-chevron-right"></i> <a class="wv-link-elm"
-                                        href="#ed-26608623" title="">Læs mere</a></p>
+                                        href="#depression"  onclick="openDnav()" title="">Læs mere</a></p>
                             </div>
                         </div>
                     </div>
@@ -768,7 +823,7 @@
                             </div>
                             <div class="ed-element ed-text custom-theme link" id="ed-26608425">
                                 <p><i class="fa fa-chevron-right"></i> <a class="wv-link-elm"
-                                        href="#ed-26608638" title="">Læs mere</a></p>
+                                        href="#kriser" onclick="openKnav()" title="">Læs mere</a></p>
                             </div>
                         </div>
                     </div>
@@ -777,36 +832,24 @@
         </div>
     </div>
     <!-- accordions -->
-    <div class="ed-element ed-container overlay-cont preset-overlay-default full-width" id="ed-26608590"
-        data-animation="{&quot;type&quot;:&quot;overlay&quot;,&quot;initial&quot;:&quot;hide&quot;,&quot;keepHeight&quot;:true,&quot;duration&quot;:&quot;.5s&quot;,&quot;delay&quot;:&quot;0s&quot;,&quot;overlay&quot;:{&quot;width&quot;:&quot;100%&quot;},&quot;trigger&quot;:&quot;&quot;,&quot;group&quot;:{&quot;name&quot;:&quot;&quot;,&quot;behavior&quot;:{&quot;show&quot;:&quot;&quot;,&quot;hide&quot;:&quot;&quot;}}}"
-        style="display: none;">
-        <div class="background">
-            <div class="ed-element ed-image wv-bg" id="ed-26608614"><img src="./index_files/stress-psykolog-grenaa(1).jpg"
-                    alt="" style="">
-                <div class="background-image-holder"
-                    style="background-image: url(&quot;https://cdn6.site-media.eu/images/1680/2689341/stress-psykolog-grenaa.jpg&quot;);">
-                </div>
-            </div>
-        </div>
-        <div class="overlay" style="background-color: rgb(0, 0, 0); opacity: 0.5;"></div>
-        <div class="inner">
-            <div class="ed-element ed-headline custom-theme" id="ed-26608611">
-                <h3 class="center">Stress-samtaler hos psykolog Grenå</h3>
-            </div>
-            <div class="ed-element ed-spacer" id="ed-26608617">
-                <div style="height: 1rem;" class="space"></div>
-            </div>
-            <div class="ed-element ed-text custom-theme" id="ed-26608620">
+    <div id="myNav" class="overlayh modal" id="stress">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlayh-content bg"  >
+            <br>
+            <br>
+            <br>
+            <h3 style = "color: white" class="center">Stress-samtaler hos psykolog Grenå</h3>
+            <div class="ed-element ed-headline custom-theme" id="ed-26608629">
                 <p>Op mod en halv million mennesker i Danmark oplever tegn og symptomer på stress, hvilket også fører
                     til en sørgelig statistik: omkring 25% af befolkningens sygemeldinger skyldes eller relateres til
                     stress-lidelser.&nbsp;</p>
                 <p><br></p>
-                <h3>Mange oplever stress</h3>
+                <h3 style="color:white;">Mange oplever stress</h3>
                 <p>Du er altså ikke ene om at opleve indre uro, tankemylder, hjertebanken, rystende hænder eller
                     søvnbesvær i dagligdagen eller opleve tankekaos, irritabilitet, følesesmæssig sårbahed,
                     hukommelsesbesvær eller vægring mod stimuli, ansvar og pres.&nbsp;</p>
                 <p><br></p>
-                <h3>Stress påvirker livskvaliteten</h3>
+                <h3 style="color:white;">Stress påvirker livskvaliteten</h3>
                 <p>Flere oplever også at trække sig socialt og have en knude i maven eller hovedpine. Det er typisk en
                     tilstand, der har bygget sig op over tid, når de fleste til sidst vælger at kontakte en psykolog for
                     at få behandling for tidlige eller alvorlige tegn på stress.</p>
@@ -815,105 +858,111 @@
                     tilstand, der har bygget sig op over tid, når de fleste til sidst vælger at kontakte en psykolog for
                     at få behandling for tidlige eller alvorlige tegn på stress.</p>
                 <p><br></p>
-                <h3>Prognosen for stress</h3>
+                <h3 style="color:white !important;">Prognosen for stress</h3>
                 <p>Stress kan blive kronisk og for nogle endvidere føre til angst, depression og nedsat livskvalitet i
                     en længere periode. Men for de fleste il alene det at tage imod opfordringen fra familie, venner
                     eller kolleger om at kontakte egen læge og efterfølgende ofte en psykolog, føre til at
                     opmærksomheden på og åbenheden omkring stress-symptomerne lindres over tid. I de situationer, hvor
                     stress-reaktionen udløser en vedholdende angst og depression, er behandlingsperioden naturligvis
-                    tilsvarende længere.</p>
+                    tilsvarende længere.
+                </p>
+    
             </div>
         </div>
     </div>
-    <div class="ed-element ed-container overlay-cont preset-overlay-default full-width" id="ed-26608623"
-        data-animation="{&quot;type&quot;:&quot;overlay&quot;,&quot;initial&quot;:&quot;hide&quot;,&quot;keepHeight&quot;:true,&quot;duration&quot;:&quot;.5s&quot;,&quot;delay&quot;:&quot;0s&quot;,&quot;overlay&quot;:{&quot;width&quot;:&quot;100%&quot;},&quot;trigger&quot;:&quot;&quot;,&quot;group&quot;:{&quot;name&quot;:&quot;&quot;,&quot;behavior&quot;:{&quot;show&quot;:&quot;&quot;,&quot;hide&quot;:&quot;&quot;}}}"
-        style="display: none;">
-        <div class="background">
-            <div class="ed-element ed-image wv-bg" id="ed-26608626"><img
-                    src="./index_files/depression-psykolog-grenaa(1).jpg" alt="" style="">
-                <div class="background-image-holder"
-                    style="background-image: url(&quot;https://cdn6.site-media.eu/images/1680/2689344/depression-psykolog-grenaa.jpg&quot;);">
+    <script>
+        function openNav() {   document.getElementById("myNav").style.display = "block"; }  function closeNav() { document.getElementById("myNav").style.display = "none";   }  function openDnav() {   document.getElementById("depression").style.display = "block"; }function closeDnav() {document.getElementById("depression").style.display = "none";}function openKnav() { document.getElementById("kriser").style.display = "block"; } function closeKnav() {  document.getElementById("kriser").style.display = "none"; }
+    </script>
+    <div  class="overlayh modal" id="depression">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeDnav()">&times;</a>
+        <div class="overlayh-content ">
+            <div class="ed-element ed-headline custom-theme">
+                <br>
+            <br>
+            <br>
+                    <h3 class="center">Behandling af depression hos psykolog Grenå</h3>
                 </div>
-            </div>
-        </div>
-        <div class="overlay" style="background-color: rgb(0, 0, 0); opacity: 0.5;"></div>
-        <div class="inner">
-            <div class="ed-element ed-headline custom-theme" id="ed-26608629">
-                <h3 class="center">Behandling af depression hos psykolog Grenå</h3>
-            </div>
-            <div class="ed-element ed-spacer" id="ed-26608632">
-                <div style="height: 1rem;" class="space"></div>
-            </div>
-            <div class="ed-element ed-text custom-theme" id="ed-26608635">
-                <p style="text-align: left;">Depression er andet end nedtrykthed, tristhed og et forsænket
-                    stemningsleje. Depression findes i tiltagende sværhedsgrader og en skræddersyet behandling tager
-                    udgangspunkt i eventuelt tidligere forekomst af depression.&nbsp;</p>
-                <h3 style="text-align: left;"><br>Grader af depression</h3>
-                <p style="text-align: left;">Til lettere grader af depression vil mange psykologer - også nær <a
-                        href="https://www.visitdjursland.com/shopicity-grenaa-by-gdk792198" rel="noopener noreferrer"
-                        target="_blank" title="">Grenå</a> - anvende en tilgang inspireret af eller centreret omkring
-                    kognitiv adfærdsterapi. Ofte vil de moderate og tungere sværhedsgrader af depression ske i
-                    samarbejde med egen læge, der ordinerer antidepressiv medicin. Efterfølgende finder mange også glæde
-                    og effekt ved mindfulness-øvelser og psykologisk opfølgende samtaler med mindfulness-elementer i
-                    terapien.</p>
-                <p style="text-align: left;"><br></p>
-                <h3 style="text-align: left;">Ramt af depression</h3>
-                <p style="text-align: left;">For mange opleves en depression som resultatet af udefrakommende
-                    belastninger - hændelser i livet, der påvirker os dybt. Det er både pludselige hændelser som sygdom
-                    eller dødsfald i familien, hos venner eller blandt nære kolleger, samtidig som depression også kan
-                    udvikle sig over tid, for eksempel i forbindelse med ledighed, skilsmisse eller livet, der former
-                    sig anderledes end forhåbninger og drømmene tilsagde.<br><br>Der er naturligvis også mange tilfælde,
-                    hvor en depression ikke opleves at hænge direkte sammen med ydre forhold, men snarere kan tilskrives
-                    arvelighed, indlærte tankemønstre i opvæksten eller fysiologiske, kropslige tilstande, der ender med
-                    at udløse en depression uden oplagte sammenhænge.</p>
-                <p style="text-align: left;"><br></p>
-                <p>Men nogle perioder i livet er mere udfordrende og belastende end andre, for eksempel ved overgange i
-                    livet, såsom fødsler, hvor fødselsdepression rammer mange kvinder og mænd. Vintermørket påvirker
-                    også mange, der som resultat oplever en tilbagevende vinterdepression. Nogle gange tungere og mere
-                    plagsomt end andre år.</p>
-                <p><br></p>
-                <h3>Psykolog-hjælp til depression</h3>
-                <p>Uanset årsag, så påvirker depression ofte livskvaliteten med gennemgribende og negativ kraft.
-                    Psykolog-behandling og anden professionel hjælp er derfor ofte en god start på vejen videre.</p>
-                <p style="text-align: left;"><br></p>
-                <p style="text-align: left;"><br></p>
-            </div>
+                <div class="ed-element ed-spacer" id="ed-26608632">
+                    <div style="height: 1rem;" class="space"></div>
+                </div>
+                <div class="ed-element ed-text custom-theme">
+                    <p style="text-align: left;">Depression er andet end nedtrykthed, tristhed og et forsænket
+                        stemningsleje. Depression findes i tiltagende sværhedsgrader og en skræddersyet behandling tager
+                        udgangspunkt i eventuelt tidligere forekomst af depression.&nbsp;</p>
+                    <h3 style="text-align: left;"><br>Grader af depression</h3>
+                    <p style="text-align: left;">Til lettere grader af depression vil mange psykologer - også nær <a
+                            href="https://www.visitdjursland.com/shopicity-grenaa-by-gdk792198" rel="noopener noreferrer"
+                            target="_blank" title="">Grenå</a> - anvende en tilgang inspireret af eller centreret omkring
+                        kognitiv adfærdsterapi. Ofte vil de moderate og tungere sværhedsgrader af depression ske i
+                        samarbejde med egen læge, der ordinerer antidepressiv medicin. Efterfølgende finder mange også glæde
+                        og effekt ved mindfulness-øvelser og psykologisk opfølgende samtaler med mindfulness-elementer i
+                        terapien.</p>
+                    <p style="text-align: left;"><br></p>
+                    <h3 style="text-align: left;">Ramt af depression</h3>
+                    <p style="text-align: left;">For mange opleves en depression som resultatet af udefrakommende
+                        belastninger - hændelser i livet, der påvirker os dybt. Det er både pludselige hændelser som sygdom
+                        eller dødsfald i familien, hos venner eller blandt nære kolleger, samtidig som depression også kan
+                        udvikle sig over tid, for eksempel i forbindelse med ledighed, skilsmisse eller livet, der former
+                        sig anderledes end forhåbninger og drømmene tilsagde.<br><br>Der er naturligvis også mange tilfælde,
+                        hvor en depression ikke opleves at hænge direkte sammen med ydre forhold, men snarere kan tilskrives
+                        arvelighed, indlærte tankemønstre i opvæksten eller fysiologiske, kropslige tilstande, der ender med
+                        at udløse en depression uden oplagte sammenhænge.</p>
+                    <p style="text-align: left;"><br></p>
+                    <p>Men nogle perioder i livet er mere udfordrende og belastende end andre, for eksempel ved overgange i
+                        livet, såsom fødsler, hvor fødselsdepression rammer mange kvinder og mænd. Vintermørket påvirker
+                        også mange, der som resultat oplever en tilbagevende vinterdepression. Nogle gange tungere og mere
+                        plagsomt end andre år.</p>
+                    <p><br></p>
+                    <h3>Psykolog-hjælp til depression</h3>
+                    <p>Uanset årsag, så påvirker depression ofte livskvaliteten med gennemgribende og negativ kraft.
+                        Psykolog-behandling og anden professionel hjælp er derfor ofte en god start på vejen videre.</p>
+                    <p style="text-align: left;"><br></p>
+                    <p style="text-align: left;"><br></p>
+                </div>
         </div>
     </div>
-    <div class="ed-element ed-container overlay-cont preset-overlay-default full-width" id="ed-26608638"
-        data-animation="{&quot;type&quot;:&quot;overlay&quot;,&quot;initial&quot;:&quot;hide&quot;,&quot;keepHeight&quot;:true,&quot;duration&quot;:&quot;.5s&quot;,&quot;delay&quot;:&quot;0s&quot;,&quot;overlay&quot;:{&quot;width&quot;:&quot;100%&quot;},&quot;trigger&quot;:&quot;&quot;,&quot;group&quot;:{&quot;name&quot;:&quot;&quot;,&quot;behavior&quot;:{&quot;show&quot;:&quot;&quot;,&quot;hide&quot;:&quot;&quot;}}}"
-        style="display: none;">
-        <div class="background">
-            <div class="ed-element ed-image wv-bg" id="ed-26608641"><img src="./index_files/krise-psykolog-grenaa(1).jpg"
-                    alt="" style="">
-                <div class="background-image-holder"
-                    style="background-image: url(&quot;https://cdn6.site-media.eu/images/1680/2689347/krise-psykolog-grenaa.jpg&quot;);">
-                </div>
-            </div>
-        </div>
-        <div class="overlay" style="background-color: rgb(0, 0, 0); opacity: 0.6;"></div>
-        <div class="inner">
+    <div  class="overlayh modal" id="kriser">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeKnav()">&times;</a>
+        <div class="overlayh-content " >
             <div class="ed-element ed-headline custom-theme" id="ed-26608644">
-                <h3 class="center">Krise-hjælp hos psykolog Grenå</h3>
+                <br>
+            <br>
+            <br><br>
+            <br>
+            <br>
+                <h3 style="color:white !important;"  class="center">Krise-hjælp hos psykolog Grenå</h3>
             </div>
             <div class="ed-element ed-spacer" id="ed-26608647">
                 <div style="height: 1rem;" class="space"></div>
+            <br><br>
             </div>
-            <div class="ed-element ed-text custom-theme" id="ed-26608650">
+            <div class="ed-element ed-text custom-theme">
                 <p>Krise, hvad enten det er en akut krise eller en eksistentiel livs-krise, opleves typisk meget
                     overvældende. Nærmest som et chok. Livet har ændret sig rundt om en, traumatisk oplevelser fylder i
                     sind og krop eller dagligdagens omvæltninger har været for voldsomme. Vi bliver sat ud af spillet,
                     mister det vante fodfæste og den balance vi er normalt besidder, mens følelerne raser eller er helt
                     stille. Blikket bliver tomt og dvælende.</p>
                 <p><br></p>
-                <h3>Snak med en psykolog om livskriser</h3>
+                <h3 style="color:white;" >Snak med en psykolog om livskriser</h3>
                 <p>I en krise-situation er det tit oplagt, at professionel hælp, som fx psykolog-samtaler, er næste
                     skridt. Det opleves ofte direkte nødvendigt at få snakket med nogen - at bearbejde oplevelserne,
                     følelserne og tankerne, der kan være et stort kaos eller skabe en pacificerende og forstummende
                     stilhed i tanke, følelser og evne til at orientere sig mod handling og vant funktion.</p>
             </div>
-        </div>
+            <div class="ed-element ed-spacer" id="ed-26608647">
+                <div style="height: 1rem;" class="space"></div>
+            </div>
+            <div class="ed-element ed-spacer" id="ed-26608647">
+                <div style="height: 1rem;" class="space"></div>
+            </div>
+            <div class="ed-element ed-spacer" id="ed-26608647">
+                <div style="height: 1rem;" class="space"></div>
+            </div>
+            <br><br><br><br><br><br>
+                        </div>
+       
     </div>
+    
     <div class="ed-element ed-container preset-footer-hel-default" id="ed-26608653">
         <div class="inner" id="contact">
             <div class="ed-element ed-spacer" id="ed-26608773">
